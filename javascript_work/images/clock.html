@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="clock.css" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">SHREYASH</div>
+      <div class="menu-btn"></div>
+      <ul class="nav-links">
+        <li><a href="#Clock">Clock</a></li>
+        <li><a href="#Stopwatch">Stopwatch</a></li>
+        <li><a href="#">timer</a></li>
+        
+      </ul>
+    </header>
+    <section id="Clock">
+      <div class="container">
+        <div class="time">12:00:00 PM</div>
+        <div class="date">dd/mm/yyyy</div>
+        <div class="day">Monday</div>
+      </div>
+    </section>
+    <section id="Stopwatch">
+      <div class="container-2">
+        <div class="timer">00:00:00</div>
+      </div>
+      <div class="buttons">
+        <button id="start" class="btn" onclick="startTimer()">Start</button>
+        <button id="stop" class="btn" onclick="stopTimer()">Stop</button>
+        <button id="reset" class="btn" onclick="resetTimer()">Reset</button>
+      </div>
+    </section>
+  </body>
+  <script src="clock.js"></script>
+
+</html>

@@ -1,0 +1,27 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(74, 74, 74),rgb(113, 255, 113));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(255, 0, 255);
+    text-shadow: 2px 5px 9px brown;
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#preloader{
+    background: black url('images/eyes-looking.gif') no-repeat center center ;
+    position: fixed;
+    opacity: 1;
+    background-size: 20%;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+}

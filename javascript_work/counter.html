@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="counter.css">
+    <title>COUNTER</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <lord-icon
+          src="https://cdn.lordicon.com/xxdqfhbi.json"
+          trigger="loop"
+          style="width: 250px; height: 250px"
+        >
+        </lord-icon>
+        <div class="counter" data-target="4000"></div>
+        <h3>Project Completed</h3>
+      </div>
+
+      <div class="container">
+        <lord-icon
+          src="https://cdn.lordicon.com/kjkiqtxg.json"
+          trigger="loop"
+          style="width: 250px; height: 250px"
+        >
+        </lord-icon>
+        <div class="counter" data-target="15000"></div>
+        <h3>Our Happy Clients</h3>
+      </div>
+
+      <div class="container">
+        <lord-icon
+          src="https://cdn.lordicon.com/coowbsor.json"
+          trigger="loop"
+          style="width: 250px; height: 250px"
+        >
+        </lord-icon>
+        <div class="counter" data-target="500"></div>
+        <h3>Ongoing Projeccts</h3>
+      </div>
+    </main>
+  </body>
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach((counter)=>{
+        counter.innerHTML=0;
+        const updateCounter = () =>{
+            const targetCounter = counter.getAttribute('data-target');
+            const incr= targetCounter/100;
+            const sCount= Number(counter.innerHTML);
+            if(sCount<targetCounter){
+                counter.innerHTML=`${sCount+incr}`;
+                setTimeout(updateCounter,10)
+            }else{
+                counter.innerHTML = targetCounter;
+            }
+
+        }
+        updateCounter();
+    });
+    
+  </script>
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+</html>

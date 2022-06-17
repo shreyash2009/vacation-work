@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main .heading h1{
+    color: yellow;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 4vh;
+    padding: 3rem;
+    text-shadow: 2px 3px coral;
+}
+main .btns{
+    padding: 3vw;
+}
+main .btns button{
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px;
+    margin: 2vw;
+    border-radius: 14px;
+}

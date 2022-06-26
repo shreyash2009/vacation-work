@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+ text-align: center;
+display: flex;
+justify-content: center;
+align-items: center; 
+background-color: black;
+}
+
+.container{
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 10px 25px 0.1px orange
+}
+.container input{
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: gold;
+    width: 16 rem;
+    font-size: 1.3rem;
+    background-color: black;
+    border: none;
+}
+.row button{
+    padding: 5px 10px;
+    width: 3.9rem;
+    margin: 2px 3px;
+    border-radius: 20%;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+}
+.row:last-child button{
+    width: 10rem;
+    padding: 3px 2px ;
+
+    color: orange;
+}
+
+button:nth-child(4){
+    color: orange;
+}

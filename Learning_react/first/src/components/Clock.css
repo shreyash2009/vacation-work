@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(90deg, #620F32, #FF149D) ;
+}
+.Container{
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 3rem;
+    border-radius: 29px;
+    color: white;
+}

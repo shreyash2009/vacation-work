@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Permanent+Marker&family=Poppins:ital,wght@0,300;1,200;1,300;1,800&family=Roboto:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#EC008C, #FC6767);
+}
+.Container{
+    background-color: whitesmoke;
+    height: 33rem;
+    width: 25rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 7px 3px grey ;
+    padding-top: 1.8em;
+}
+h1{
+    padding: 7px;
+    background-color: violet;
+    width: 100%;
+    text-align: center;
+    font-size: 2.7rem;
+    color: whitesmoke;
+    text-shadow: 1px 4px 4px grey;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 4px;
+}
+.inputPart{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.4rem;
+    padding: 3px 3.4em;
+}
+input{
+    border: none;
+    background-color: whitesmoke;
+    padding: 10px 9px;
+    font-size: large;
+    text-decoration: underline  rgb(0, 217, 255) ;
+    border-style:inset;
+    border-radius: 30px;
+}
+button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: xx-large;
+    background-color: rgb(137, 200, 137);
+    color: white;
+    border: solid 1px white ;
+    font-family: sans-serif;
+}
+
+.showItems{
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 18px 50px;
+}
+.Item-content{
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+    gap: 20px;
+    padding: 1px 2px;
+}
+li{
+    list-style: none;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.Item-content i{
+    background-color: grey;
+    border-radius: 50%;
+    padding: 8px;
+    color: whitesmoke;
+}

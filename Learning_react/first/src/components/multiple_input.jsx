@@ -14,6 +14,9 @@ const MulInput = ()=>{
         const name = event.target.name;
         const value = event.target.value;
 
+        //instead of declaring variable for name and value you can asssign it to an array which containes same name as attributes
+        // const {name,, value} = event.target  
+
         setFullName((preValue)=>{                                   //all the update part in hook passes a argument with the help of that we can access the previous values before updation
             if(name === 'fname'){
                 return{

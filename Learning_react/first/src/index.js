@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 // import Form from './components/Form'
 // import MulInput  from './components/multiple_input';
 // import Todo from './components/Todo_list';
-import Quote from './components/Quote';
+// import Quote from './components/Quote';
 const root =document.getElementById('root');
 
-ReactDOM.render(<Quote/>, root);
+ReactDOM.render(<Todo/>, root);

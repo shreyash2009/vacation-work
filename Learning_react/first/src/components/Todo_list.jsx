@@ -19,6 +19,17 @@ const Todo = () => {
     setItem("");
   };
 
+
+  const DeleteItem = (id) =>{
+    setItemList((oldItems)=>{
+      return oldItems.filter((ele, index)=>{
+          return id !== index;
+      })
+    })
+  };
+
+  
+
   return (
     <div className="Container">
       <h1>ToDo List </h1>
@@ -35,9 +46,9 @@ const Todo = () => {
         <ol>
           {/* note:- when writing js in jsx component write before return or write in curly braces*/}
           {/*  <li>{itemName}</li>  */}
-          {itemList.map((currVal) => {
+          {itemList.map((currVal, index) => {
             //map function  returns an array, here we are using it for traversing array of items
-            return <ToDoList text = {currVal}/>;
+            return <ToDoList text = {currVal} key = {index} id ={index} onSelect={DeleteItem} />;
           })}
         </ol>
       </div>

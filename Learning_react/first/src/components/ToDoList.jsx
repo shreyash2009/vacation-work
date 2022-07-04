@@ -3,12 +3,15 @@ import React from "react";
 
 
 const ToDoList = (props) => {
-    const DeleteItem =()=>{
-        console.log("clicked");
-    }
+  
+    
   return (
     <div className="Item-content">
-   <i className="fa-regular fa-trash-can" onClick={DeleteItem}></i>
+   <i className="fa-regular fa-trash-can" onClick={()=>{
+    props.onSelect(props.id);
+   }}>
+
+   </i>
       <li>{props.text}</li>
       <i class="fa-solid fa-pen"></i>
 

@@ -36,10 +36,10 @@ const State = () => {
                         return(
                         <tr key={ind}>
                 <td>{currEle.state}</td>
-                <td>{currEle.confirmed}</td>
-                <td>{currEle.recovered}</td>
-                <td>{currEle.deaths}</td>
-                <td>{currEle.active}</td>
+                <td className='text-danger'>{currEle.confirmed}</td>
+                <td className='text-success'>{currEle.recovered}</td>
+                <td className='text-danger'>{currEle.deaths}</td>
+                <td className='text-success' >{currEle.active}</td>
                 </tr>
                     )})
                 }

@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: yellow;
+    padding: 2rem 1.2rem;
+}
+.header .logo{
+    font-size: xx-large;
+}
+.header .logo span{
+    font-size: x-large;
+}
+
+.create-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+.create-note form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding:  0.5rem;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px 2px grey;
+    width: 25vw;
+}
+.create-note form button{
+    align-self: flex-end;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 2em;
+    border: 1px solid grey;
+    transition: all 7ms ease-in-out;
+}
+.create-note form button:hover{
+    background-color: yellow;
+    transform: translate(1px, -1px);
+    box-shadow: 2px 1px 3px 1px grey;
+
+}
+.create-note form input, .create-note form textarea{
+    border: none;
+    padding: 13px;
+    width: 80%;
+    border-radius: 9px;
+    resize: none;
+    font-size: 1.2em;
+    
+    color: black;
+}
+.create-note form input{
+    font-size: xx-larger;
+    font-weight: 400;
+}
+.create-note form input:focus, .create-note form textarea:focus{
+    outline: none;
+}
+
+
+
+.Notes{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em 3rem;
+    align-items: center;
+}
+.Notes .note{
+    background-color: whitesmoke;
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.Notes .note button{
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 50%;
+}

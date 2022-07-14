@@ -1,12 +1,12 @@
 import React, {useState ,useEffect } from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const State = () => {
-    const [values, setValue] = useState([]);        
-    const getCovidData = async ()=>{
-        const res = await fetch("https://data.covid19india.org/data.json");
-        const data = await res.json();
-        setValue(data.statewise);
+const State = () => { 
+    const [values, setValue] = useState([]);            //we are initializing it with empty array here we can write data.statewise to but for that we need to get data first
+    const getCovidData = async ()=>{                    // we are using async function here which will return a promise
+        const res = await fetch("https://data.covid19india.org/data.json");    //if promise is resolved we 
+        const data = await res.json();                                      //data converted into pure json
+        setValue(data.statewise);               //updating the value of usestate with the data which we are getting from async function
     }
 
     useEffect(()=>{

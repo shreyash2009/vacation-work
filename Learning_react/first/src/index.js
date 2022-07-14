@@ -8,7 +8,8 @@ import {createRoot} from "react-dom/client";
 // import Todo from './components/Todo_list';
 // import Quote from './components/Quote';
 // import App from './Google_keep/App';
-import CovidApp from './CovidApp';
+// import CovidApp from './CovidApp';
+
 const root =document.getElementById('root');
 
 createRoot(root).render(<CovidApp />);

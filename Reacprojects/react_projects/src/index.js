@@ -6,13 +6,13 @@ import {createRoot} from 'react-dom/client'
 // import GithubApp from './Components/GithubApp';
 // import ReviewsApp from './Components/ReviewsApp';
 // import Accordion from './Components/AccordionApp'
-// import Menu from './Components/Menu';
+import Menu from './Components/Menu';
 // import GroceryApp from './Components/Grocery/GroceryApp';
 // import StripeApp from './Components/Stripe/StripeApp';
 // import { AppProvider } from './Components/Stripe/Context';
-import UnsplashApp from './Components/Unspalsh/UnsplashApp';
+// import UnsplashApp from './Components/Unspalsh/UnsplashApp';
 const root =document.getElementById('root');
 
 createRoot(root).render(
-    <UnsplashApp/>
+    <Menu/>
 );

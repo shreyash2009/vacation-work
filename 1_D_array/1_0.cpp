@@ -68,26 +68,26 @@ int main() {
 
 
 ///
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-	// your code goes here
-	int t;
-	cin>>t;
-	while(t--){
-	    int n; 
-	    cin>>n;
-	    int sum =0;
-	    int arr[n];
-	    for(int i=0;i<n;i++){
-	        cin>>arr[i];
-	        sum+=arr[i];
-	    }
-	    sum = sum/(n+1);
-	    for(int i=0;i<n;i++)
-	        cout<<arr[i]-sum<<" ";
-	    cout<<endl;
-	}
-	return 0;
-}
+// int main() {
+// 	// your code goes here
+// 	int t;
+// 	cin>>t;
+// 	while(t--){
+// 	    int n; 
+// 	    cin>>n;
+// 	    int sum =0;
+// 	    int arr[n];
+// 	    for(int i=0;i<n;i++){
+// 	        cin>>arr[i];
+// 	        sum+=arr[i];
+// 	    }
+// 	    sum = sum/(n+1);
+// 	    for(int i=0;i<n;i++)
+// 	        cout<<arr[i]-sum<<" ";
+// 	    cout<<endl;
+// 	}
+// 	return 0;
+// }
